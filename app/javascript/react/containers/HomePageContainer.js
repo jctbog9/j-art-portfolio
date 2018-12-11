@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import SlideShowTile from '../components/SlideShowTile'
+
 class HomePageContainer extends Component {
   constructor(props) {
     super(props);
@@ -12,11 +14,7 @@ class HomePageContainer extends Component {
 
     return(
       <div>
-        <br />
-        <br />
-        <br />
-        <br />
-        This is the home page
+        <SlideShowTile />
       </div>
     );
   }
