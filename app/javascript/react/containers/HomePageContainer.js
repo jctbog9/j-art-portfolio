@@ -14,7 +14,15 @@ class HomePageContainer extends Component {
 
     return(
       <div>
-        <SlideShowTile />
+        <SlideShowTile
+          galleryNumber='Gallery 1'
+        />
+        <SlideShowTile
+          galleryNumber='Gallery 2'
+        />
+        <SlideShowTile
+          galleryNumber='Gallery 3'
+        />
       </div>
     );
   }
