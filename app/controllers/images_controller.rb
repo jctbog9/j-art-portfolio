@@ -12,7 +12,13 @@ class ImagesController < ApplicationController
   end
 
   def create
-    Image.create!(params[:image].permit(:name, :price, :description, :exhibition_id, :image))
+    Image.create!(image_params)
     redirect_to root_path
+  end
+
+  private
+
+  def image_params
+    params[:image].permit(:name, :price, :description, :image, :exhibition_id)
   end
 end
