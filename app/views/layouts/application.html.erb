@@ -26,9 +26,12 @@
       <ul class="right">
         <%- if current_user && current_user.role == 'admin'-%>
           <li><a><%= current_user.email %></a></li>
-          <li><a>Add Image</a></li>
-          <li><a>Add Exhibition</a></li>
+          <li><%= link_to 'Add Image', new_image_path %></li>
+          <li><%= link_to 'Add Exhibition', new_exhibition_path %></li>
           <li><a href="/users/edit"><i class="fas fa-cog" ></i></a></li>
+          <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+        <% elsif current_user %>
+          <li><a><%= current_user.email %></a></li>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
           <li><%= link_to 'Sign Up', new_user_registration_path %></li>
