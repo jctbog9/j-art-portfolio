@@ -10,11 +10,11 @@
   <%= f.label "Description" %>
   <%= f.text_field :description %>
 
+  <%= f.label "Exhibition" %>
+  <%= f.select(:exhibition_id, options_for_select(@selectors)) %>
+
   <%= f.label "Image" %>
   <%= f.file_field :image %>
-
-  <%= f.label "Exhibition" %>
-  <%= select_tag(:exhibition_id, options_for_select(@selectors)) %>
 
   <%= f.submit "Add Image" %>
 <% end %>
