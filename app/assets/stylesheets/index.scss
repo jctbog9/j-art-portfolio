@@ -1,4 +1,8 @@
 
+body{
+  background-color: #7AA9A6;
+}
+
 .galleries-wrapper {
   width: 50%;
   margin-left: 10%;
@@ -9,18 +13,27 @@
   float: left;
   margin: 10px;
   text-align: center;
+  width: 205px;
+  background-color: #656870;
+  border: 1px solid #000000; 
+
 }
 
-.thumbnail img {
-  height: 200px;
-  overflow: hidden;
-}
-
-.thumbnail img:hover {
-  height: 250px;
+.thumbnail:hover {
+  width: 250px;
+  margin: -10px -10px -10px -10px;
   transition-duration: 0.3s;
   cursor: pointer;
+  opacity: 0.9;
 }
+.thumbnail img {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: -4px 2px #000000;
+}
+
 
 h2 {
  text-align: center;
