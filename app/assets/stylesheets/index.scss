@@ -1,0 +1,34 @@
+
+.galleries-wrapper {
+  width: 50%;
+  margin-left: 10%;
+  float: left;
+}
+
+.thumbnail {
+  float: left;
+  margin: 10px;
+  text-align: center;
+}
+
+.thumbnail img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.thumbnail img:hover {
+  height: 250px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+h2 {
+ text-align: center;
+}
+
+.right {
+  float: left;
+  width: 400px;
+  background-color: #E9EBEE;
+  height: 100vh;
+}
