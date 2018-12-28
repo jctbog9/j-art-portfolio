@@ -13,14 +13,16 @@ class ExhibitionTile extends Component {
     if (this.props.images.length) {
       thumbnail = this.props.images[0]
       urlLength = thumbnail.length
-      splicedThumbnail = <Link to={`/exhibitions/${this.props.id}`}><img src={thumbnail.image.url.slice(1,urlLength)} /></Link>
+      splicedThumbnail = <img src={thumbnail.image.url.slice(1,urlLength)} />
       caption = <h3>{thumbnail.name}</h3>
     }
     return (
-      <div className="thumbnail">
-        {splicedThumbnail}
-        {caption}
-      </div>
+      <Link to={`/exhibitions/${this.props.id}`}>
+        <div className="thumbnail">
+          {splicedThumbnail}
+          {caption}
+        </div>
+      </Link>
     )
   }
 }
