@@ -7,7 +7,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :exhibitions, only: [:index]
+      resources :exhibitions, only: [:index, :show]
     end
   end
+
+  get "/exhibitions/:id", to: "homes#index"
 end

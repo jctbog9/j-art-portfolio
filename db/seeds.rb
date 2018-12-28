@@ -8,4 +8,4 @@
 
 User.create!(email: 'jasonantaya808@gmail.com', password: '123456789', role: 'admin')
 
-Exhibition.create!(name: 'Test Exhition', date: '12/25/2018', location: 'North Pole')
+Exhibition.create!(name: 'Test Exhibition', date: '12/25/2018', location: 'North Pole')
