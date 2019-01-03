@@ -1,25 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is currently under development. It will feature admin functionality run through Devise gem authentication and will run on Ruby version 2.4.5 and React version 14.5.2
 
-Things you may want to cover:
+This application is a portfolio for an artist to be able to login and manage their inventory.
 
-* Ruby version
+Each image they are listing for sale on the site will be housed within whichever exhibition it has been shown at.
 
-* System dependencies
+This application does not yet support payment but will eventually use PayPal-Ruby-SDK or something similar to process and manage transactions.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # j-art-portfolio
