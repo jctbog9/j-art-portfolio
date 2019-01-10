@@ -32,7 +32,7 @@ class ExhibitionShowContainer extends Component {
   render() {
 
     let images = this.state.images.map(image => {
-      return <img src={image.image.url} />
+      return <img src={image.image} className="thumbnail"/>
     })
 
     return(
