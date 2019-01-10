@@ -1,37 +1,56 @@
 
 body{
-  background-color: #7AA9A6;
+  background-image: url(https://scontent.fbed1-1.fna.fbcdn.net/v/t1.0-9/49947591_1977648952334479_2937643843895427072_o.jpg?_nc_cat=105&_nc_eui2=AeFrerbcMohP5Vyx1Vrqw24fokmfROIHvv0wX-koOCXL6ke1Z2MRdzlAMeZDjQ_nB2_YUvTtUz7IEAlu7KoVpTnBmYcSbSXHssdLvMxfk_SWGA&_nc_ht=scontent.fbed1-1.fna&oh=6818ab70f3621ba977bc9e6fcdb092dd&oe=5CCE4119);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-bar {
+  background-color: #374868;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background-color: #374868;
 }
 
 .galleries-wrapper {
-  width: 50%;
-  margin-left: 10%;
+  width: 60%;
+  height: 100vh;
   float: left;
+  background-color: rgba(122, 169, 166, 0.8);
 }
 
 .thumbnail {
   float: left;
-  margin: 10px;
+  margin-left: 40px;
   text-align: center;
-  width: 205px;
+  width: 240px;
   background-color: #656870;
-  border: 1px solid #000000; 
-
+  border: 1px solid #000000;
+  transition-duration: 0.3s;
 }
 
 .thumbnail:hover {
   width: 250px;
-  margin: -10px -10px -10px -10px;
-  transition-duration: 0.3s;
   cursor: pointer;
   opacity: 0.9;
+  box-shadow: -4px 4px #000000;
+  transition-duration: 0.3s;
 }
+
+.thumbnail:hover h3{
+  font-style: italic;
+}
+
+.thumbnail:hover img{
+  box-shadow: none;
+}
+
 .thumbnail img {
   margin: 10px;
   width: 200px;
   height: 200px;
   overflow: hidden;
-  box-shadow: -4px 2px #000000;
 }
 
 
@@ -41,7 +60,8 @@ h2 {
 
 .right {
   float: left;
-  width: 400px;
-  background-color: #E9EBEE;
+  width: 40%;
+  height: 100vh;
+  background-color: rgba(54, 126, 128, 0.9);
   height: 100vh;
 }
