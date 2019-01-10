@@ -31,9 +31,15 @@ class ExhibitionShowContainer extends Component {
 
   render() {
 
+    let images = this.state.images.map(image => {
+      return <img src={image.image.url} />
+    })
+
     return(
       <div>
         <h1>{this.state.exhibition.name}</h1>
+        <p>{this.state.exhibition.date}</p>
+        {images}
       </div>
     );
   }
