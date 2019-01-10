@@ -57,7 +57,8 @@ class HomePageContainer extends Component {
     return(
       <div>
         <div className="galleries-wrapper">
-          <h2>My Exhibitions</h2>
+          <h2>Jason Antaya Art</h2>
+          <h3 className="marginalize-20">Exhibitions</h3>
           {exhibitions}
         </div>
         <div className="right">
