@@ -80,6 +80,9 @@ class HomePageContainer extends Component {
             <a href="https://www.instagram.com/jasonantayaart" target="_blank">
               <img src="https://instagram-brand.com/wp-content/uploads/2016/11/app-icon2.png"/>
             </a>
+            <a href="https://twitter.com/jasonantaya808" target="_blank">
+              <img src="http://pngimg.com/uploads/twitter/twitter_PNG32.png"/>
+            </a>
           </div>
         </div>
       </div>
