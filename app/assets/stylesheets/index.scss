@@ -42,10 +42,17 @@ body{
   box-shadow: -4px 4px #000000;
   border-radius: 0px 60px 0px 60px;
   transition-duration: 0.3s;
+  border-radius: 50%;
 }
 
 .thumbnail:hover h3{
   font-style: italic;
+  overflow: hidden;
+}
+
+.thumbnail:hover img{
+  box-shadow: none;
+  border-radius: 50%;
 }
 
 .thumbnail img {
@@ -54,11 +61,6 @@ body{
   height: 200px;
   overflow: hidden;
   border-radius: 60px 0px 60px 0px;
-}
-
-.thumbnail:hover img{
-  border-radius: 0px 60px 0px 60px;
-  transition-duration: 0.3s;
 }
 
 h2 {
