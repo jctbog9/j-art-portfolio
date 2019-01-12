@@ -40,14 +40,17 @@ body{
   opacity: 0.9;
   box-shadow: -4px 4px #000000;
   transition-duration: 0.3s;
+  border-radius: 50%;
 }
 
 .thumbnail:hover h3{
   font-style: italic;
+  overflow: hidden;
 }
 
 .thumbnail:hover img{
   box-shadow: none;
+  border-radius: 50%;
 }
 
 .thumbnail img {
